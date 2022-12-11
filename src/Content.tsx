@@ -1,4 +1,4 @@
-export const Content = () => {
+const Content = () => {
     return (
         <>
             <p>
@@ -13,3 +13,7 @@ export const Content = () => {
         </>
     )
 }
+
+export const test = 10
+
+export default Content
