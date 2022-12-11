@@ -1,19 +1,14 @@
-const Content = () => {
+type Props = {
+    p1: string
+    p2: string
+}
+
+const Content = ({ p1, p2 }: Props) => {
     return (
         <>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui,
-                repellat. Ut harum quidem tempore sint, est error vero impedit
-                beatae?
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Provident tenetur aliquam deleniti fugiat.
-            </p>
+            <p>{p1}</p>
+            <p>{p2}</p>
         </>
     )
 }
-
-export const test = 10
-
 export default Content

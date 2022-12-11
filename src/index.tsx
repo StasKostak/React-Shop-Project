@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import Content, { test } from './Content'
+import Content from './Content'
 
 type TitleProps = {
     title: string
@@ -19,7 +19,7 @@ const App = () => {
     return (
         <>
             <Title text="Hello" title="About" />
-            <Content />
+            <Content p1="asdasda" p2="khgasgkagg" />
         </>
     )
 }
