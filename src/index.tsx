@@ -1,8 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-const Title = () => {
-    return <h1>Hello React.js</h1>
+type TitleProps = {
+    title: string
+}
+
+const Title = (props: TitleProps) => {
+    return <h1>Hello {props.title}</h1>
 }
 
 const Content = () => {
@@ -24,7 +28,8 @@ const Content = () => {
 const App = () => {
     return (
         <>
-            <Title />
+            <Title title="React.js" />
+            <Title title="Bla-bla" />
             <Content />
         </>
     )
