@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom/client'
 
 type TitleProps = {
     title: string
+    text: string
 }
 
 const Title = (props: TitleProps) => {
-    return <h1>Hello {props.title}</h1>
+    return (
+        <h1>
+            {props.text} {props.title}
+        </h1>
+    )
 }
 
 const Content = () => {
@@ -28,8 +33,9 @@ const Content = () => {
 const App = () => {
     return (
         <>
-            <Title title="React.js" />
-            <Title title="Bla-bla" />
+            <Title text="Hello" title="About" />
+            <Title text="Hey" title="React.js" />
+            <Title text="Hi" title="Bla-bla" />
             <Content />
         </>
     )
