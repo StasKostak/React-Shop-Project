@@ -1,4 +1,5 @@
 import { Typography } from '@mui/material'
+import ProductsList from 'components/Products/ProductsList'
 
 type Props = {}
 
@@ -9,6 +10,7 @@ const Home = (props: Props) => {
                 {''}
                 List Product{''}
             </Typography>
+            <ProductsList />
         </>
     )
 }
