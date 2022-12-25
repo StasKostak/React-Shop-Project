@@ -1,0 +1,28 @@
+.product-list-item {
+  padding: 15px;
+}
+.product-list-item .product-title {
+  margin: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+.product-list-item .product-desc {
+  font-size: 18px;
+}
+.product-list-item .product-features {
+  font-size: 16px;
+  margin: 15px 0;
+}
+.product-list-item .product-features span {
+  font-weight: bold;
+}
+.product-list-item .product-price {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.btns-wrap {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=ProductsListItem.css.map */
