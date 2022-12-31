@@ -1,6 +1,14 @@
 .product-list-item {
   padding: 15px;
 }
+.product-list-item .product-img {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.product-list-item .product-img img {
+  width: 150px;
+  height: auto;
+}
 .product-list-item .product-title {
   margin: 10px;
   font-size: 25px;
@@ -10,7 +18,7 @@
   font-size: 18px;
 }
 .product-list-item .product-features {
-  font-size: 16px;
+  font-size: 18px;
   margin: 15px 0;
 }
 .product-list-item .product-features span {
@@ -20,6 +28,13 @@
   font-size: 18px;
   text-align: center;
   font-weight: bold;
+}
+.product-list-item .product-quantity {
+  display: flex;
+  margin: 15px 0;
+}
+.product-list-item .product-quantity input {
+  text-align: center;
 }
 
 .btns-wrap {
