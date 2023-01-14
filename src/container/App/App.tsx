@@ -26,6 +26,13 @@ const App = () => {
         serProductsInCart((prevState: ProductsInCart) => omit(prevState, [id]))
     }
 
+    const changeProductQuantity = (id: number, count: number) => {
+        serProductsInCart((prevState: ProductsInCart) => ({
+            ...prevState,
+            [id]: count,
+        }))
+    }
+
     return (
         <StyledEngineProvider injectFirst>
             <CssBaseline />
@@ -34,6 +41,7 @@ const App = () => {
                 addProductToCart={addProductToCart}
                 productsInCart={productsInCart}
                 removeProductFromCart={removeProductFromCart}
+                changeProductQuantity={changeProductQuantity}
             />
         </StyledEngineProvider>
     )
