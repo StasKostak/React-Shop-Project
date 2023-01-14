@@ -9,7 +9,10 @@ type ProductsInCart = {
 }
 
 const App = () => {
-    const [productsInCart, serProductsInCart] = useState<ProductsInCart>({})
+    const [productsInCart, serProductsInCart] = useState<ProductsInCart>({
+        1: 4,
+        2: 1,
+    })
 
     const addProductToCart = (id: number, count: number) => {
         serProductsInCart((prevState: ProductsInCart) => ({
@@ -18,10 +21,21 @@ const App = () => {
         }))
     }
 
+    const removeProductFromCart = (id: number) => {
+        serProductsInCart((prevState: ProductsInCart) => {
+            let prevProductsInCart = { ...prevState }
+            delete prevProductsInCart[id]
+            return prevProductsInCart
+        })
+    }
+
     return (
         <StyledEngineProvider injectFirst>
             <CssBaseline />
             <Header productsInCart={productsInCart} />
+            <button onClick={() => removeProductFromCart(1)}>
+                Remuve Prodect
+            </button>
             <Main
                 addProductToCart={addProductToCart}
                 productsInCart={productsInCart}
